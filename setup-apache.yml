@@ -1,0 +1,6 @@
+---
+- name: playbook to install httpd package
+  hosts: all
+  become: true
+  roles: 
+    - setup-apache

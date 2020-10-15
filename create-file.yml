@@ -1,0 +1,9 @@
+---
+- name: playbook to create file or directory
+  hosts: all
+  become: true
+  tasks: 
+  - name: remove index2 file
+    file: 
+      path: /home/ansadmin/index2.html
+      state: absent

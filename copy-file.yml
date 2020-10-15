@@ -1,0 +1,10 @@
+---
+- name: playbook to copy file to inventory hosts
+  hosts: all
+  # become: true
+  tasks: 
+  - name: copy file to another host
+    copy: 
+      src: /opt/ansible/index2.html
+      dest: /home/ansadmin
+      mode: 770   
